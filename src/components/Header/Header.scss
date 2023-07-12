@@ -1,0 +1,23 @@
+@import './src/styles/index.scss' ;
+header{
+    display: flex;
+    max-width: 1240px;
+     padding-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    nav{
+     
+     display: flex;
+     gap: 2rem;
+     a{
+         color: $main-color;
+         text-decoration: none;
+         font-weight: 600;
+     }
+       
+    }
+
+}
+

@@ -1,0 +1,24 @@
+@import './src/styles/index.scss' ;
+
+.error__main{
+    color:$main-color ;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  
+
+
+    h1{
+        font-size: 200px; 
+        margin: 0;
+        padding: 0;
+    }
+    h2{
+   
+    }
+    a{
+       color: $main-color;
+    }
+}

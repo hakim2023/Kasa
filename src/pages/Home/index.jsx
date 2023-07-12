@@ -1,10 +1,10 @@
-
-import '../../styles/Home.scss';
+import Banner from '../../components/Banner';
+import './Home.scss';
 
 function Home() {
   return (
     <div className="Home">
-      <h1>Home</h1>
+      <Banner/>
     </div>
   );
 }

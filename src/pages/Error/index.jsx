@@ -1,9 +1,9 @@
 import React from 'react'
-
+import D_404 from '../../components/D_404'
  function Error()  {
   return (
     <div>
-       <h1>Oups 🙈 Cette page n'existe pas</h1>
+    <D_404/>
     </div>
   )
 }
