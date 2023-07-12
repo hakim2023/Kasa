@@ -1,12 +1,12 @@
 
-import '../../styles/App.css';
+import '../../styles/Home.scss';
 
-function App() {
+function Home() {
   return (
-    <div className="App">
+    <div className="Home">
       <h1>Home</h1>
     </div>
   );
 }
 
-export default App;
+export default Home;
