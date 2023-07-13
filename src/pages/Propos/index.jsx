@@ -1,9 +1,10 @@
-
+import Banner from "../../components/Banner"
 function Propos() {
+    const text = ''
     return (
-        <div>
-            <h1>Propos</h1>
-        </div>
+        <>
+        <Banner text={text} />
+        </>
     )
 }
 

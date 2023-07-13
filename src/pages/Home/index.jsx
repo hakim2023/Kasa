@@ -1,10 +1,16 @@
 import Banner from '../../components/Banner';
-import './Home.scss';
+import Gallery from '../../components/Gallery';
+
+
 
 function Home() {
+  const text = 'Chez vous, partout et ailleurs'
+ 
+  
   return (
     <div className="Home">
-      <Banner/>
+      <Banner text={text} />
+      <Gallery/>
     </div>
   );
 }

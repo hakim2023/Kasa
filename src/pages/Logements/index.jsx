@@ -1,10 +1,14 @@
 
-function Logements() {
+// Second page
+import React from 'react';
+
+
+function Logements(props) {
+   
     return (
-        <div>
-            <h1>Logements</h1>
-        </div>
-    )
+        <div>{props.data}</div>
+  );
 }
 
-export default Logements
+export default Logements;
+
