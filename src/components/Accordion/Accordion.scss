@@ -1,0 +1,47 @@
+@import './src/styles/index.scss' ;
+.accordion{
+   max-width: 1150px;
+   margin: 0 auto;
+   .accordion__container{
+      padding: 4rem;
+    
+   
+      h2{
+         background-color:  $main-color;
+         color: $white-color;
+         cursor: pointer;
+         padding: 1rem;
+         border-radius: 5px;
+         display: flex;
+         justify-content: space-between;
+         z-index: 3;
+         font-weight: 200;
+         
+     
+         .arrow__down{
+      
+         transform: rotate(-180deg);
+         transition: all 0.5s ease;
+         }
+         .arrow__up{
+            // transform: rotate(90deg);
+            transition: all 0.5s ease;
+         }
+    
+      }
+      p{
+         display: none;
+         background-color: $secondary-color;
+         color: $main-color;
+         margin-top: -1.2rem;
+         padding: 2rem 1rem;
+         z-index: -5;
+         font-size: 18px;
+         line-height: 26px;
+      }
+      .show{
+         display: inline-block;
+      
+      }
+   }
+}
