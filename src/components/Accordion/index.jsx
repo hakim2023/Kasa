@@ -9,7 +9,7 @@ const [selected , setSelected] = useState(null)
 
   function toggleAccordion(i){
     selected === i? setSelected(null) : setSelected(i)
-   console.log(selected)
+  //  console.log(selected)
   }
   return (
     <div className='accordion'>
@@ -17,15 +17,16 @@ const [selected , setSelected] = useState(null)
                     
               {valeurs_data.map((props,i) => (
 						  	   <div className='item' key={props.id}>
-                    <div>
+                    <div className='title__accordion'>
                       <h2 onClick={() => toggleAccordion(i)}>{props.title} 
                         <span className='dropdown'>
                            <img className ={selected === i?'arrow__down':'arrow__up'} src={arrowUp} alt="arrow-up" />
                          </span>
                       </h2>
                     </div>
-                          
-                       <p className={selected === i?'show':''}>{props.description}</p> 
+                         <div className='description__container'>
+                            <p className={selected === i?'show':''}>{props.description}</p> 
+                          </div> 
                     
                    </div>           
                 ))}   

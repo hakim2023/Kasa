@@ -1,19 +1,43 @@
 import { Link } from 'react-router-dom'
 import './Header.scss'
 import Logo from '../../assets/logo.png'
+import { NavLink } from 'react-router-dom';
  
 function Header() {
+       
     return (<>
-    <header>
+         <header>
         
         <Link to="/"><img src={Logo} alt="logo" /></Link>
-        <nav>
-                <Link to="/">Accueil</Link>
-                <Link to="/a_propos">À Propos</Link>
-         </nav>
+     
+
+         <nav className="navbar">
+    <NavLink
+      exact="true"
+      // activeClassName="navbar__link--active"
+      className="navbar__link"
+      to="/"
+    >
+      Accueil
+    </NavLink>
+   
+    <NavLink
+      // activeClassName="navbar__link--active"
+      className="navbar__link"
+      to="/a_propos"
+    >
+      A Propos
+    </NavLink>
+  </nav>
+
+
         </header>
         </>
     )
 }
+
+
+
+     
 
 export default Header

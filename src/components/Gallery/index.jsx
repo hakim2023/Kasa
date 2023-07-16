@@ -15,6 +15,7 @@ export default function Gallery() {
                         id={logement.id}
                         cover={logement.cover}
                         title={logement.title}
+                        host={logement.host}
 						      	 />               
                 ))}   
     </ul>
