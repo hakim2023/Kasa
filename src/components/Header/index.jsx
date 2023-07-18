@@ -2,15 +2,14 @@ import { Link } from 'react-router-dom'
 import './Header.scss'
 import Logo from '../../assets/logo.png'
 import { NavLink } from 'react-router-dom';
- 
+
 function Header() {
-       
+    
     return (<>
          <header>
+       
+        <Link to="/"><img className='active__logo'src={Logo} alt="logo" /></Link>
         
-        <Link to="/"><img src={Logo} alt="logo" /></Link>
-     
-
          <nav className="navbar">
     <NavLink
       exact="true"

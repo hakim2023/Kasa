@@ -37,6 +37,7 @@ export default function Logement() {
   <div className="logement__container">
 
     <Carousel
+    
         id={logement.id}
         cover={logement.cover}
         title={logement.title}

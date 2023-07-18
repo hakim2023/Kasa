@@ -4,13 +4,28 @@
     position: relative;
     
 
-    img{
+    .slide{
+        position: absolute;
+        top: 0;
         height: 100%;
         width: 100%;
         object-fit: cover;
         border-radius: 25px; 
         overflow: hidden;
         z-index: -5;
+    }
+    .left__arrow , .right__arrow{
+        position: absolute;
+        top: 50%;
+        
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    .left__arrow{
+        left: 30px;
+    }
+    .right__arrow{
+        right: 30px;
     }
     .photos__number{
         position: absolute;

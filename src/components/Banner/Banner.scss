@@ -11,15 +11,21 @@
     border-radius: 25px;
     height: 223px;
     max-width: 1240px;
+   
     margin: 0 auto;
     margin-top: 50px;
+    padding: 0rem 0rem;
    
     background-position: center;
     background-size: cover;
-    // box-shadow: 1px 1px 15px rgb(73, 73, 73);
+    @media only screen and (max-width: 600px) {
+    max-width: 80%;
+    }
+    
   @include display-flex;
   color: $white-color;
       h1{
         font-size: 48px;
       }
+   
     }

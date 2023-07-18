@@ -2,16 +2,24 @@
 .details__container{
    display: flex;
    justify-content: space-between;
+  
 
    .details__left{
     width: 50%;
+    padding-bottom: 1rem;
     h1 {
     color: $main-color;
     font-size: 36px;
+  
+    margin-bottom: 0.7rem;
     }
     h2{
         color: $main-color;
         font-size: 18px;
+        padding-bottom: 2rem;
+       
+        margin-top: 0;
+      
     }
    }
 

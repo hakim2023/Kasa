@@ -7,7 +7,7 @@ export default function Rating(props) {
 
 return (
     <div>
-           {range.map((rangeElem) => props.rateValue>= rangeElem ? <span key={rangeElem.toString()}>   <img src={starFull} alt="star-full" /></span> :<img src={starEmpty} alt="star-empty" />
+           {range.map((rangeElem,index) => props.rateValue>= rangeElem ? <span key={Math.random(index)}>  <img src={starFull} alt="⭐" /></span> : <span key={Math.random(index)}>  <img src={starEmpty} alt="⭐" /></span> 
             )}
          
         </div>
