@@ -16,7 +16,7 @@ export default function GalleryItem({id,title, cover }) {
             <img src={cover} alt={`${title} cover`} />
          </Link>
          <p>{title}</p>
-		  </li>
+	  </li>
         </>
 
   )

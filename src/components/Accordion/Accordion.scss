@@ -1,9 +1,8 @@
 @import './src/styles/index.scss' ;
 .accordion{
-   max-width: 1200px;
-   margin: 0 auto;
+  
    .accordion__container{
-      padding: 4rem;
+      padding: 0rem;
     .title__accordion{
 
     padding: 0rem 1rem;
@@ -55,6 +54,7 @@
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
          margin-top: -1.20rem;
+         
      
          
       }
