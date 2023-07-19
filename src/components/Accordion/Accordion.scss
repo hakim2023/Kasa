@@ -1,32 +1,44 @@
 @import './src/styles/index.scss' ;
 .accordion{
+  height: fit-content;
+  
   
    .accordion__container{
       padding: 0rem;
+      margin-top: 5%;
+    
     .title__accordion{
 
     padding: 0rem 1rem;
     background-color:  $main-color;
     border-radius: 5px;
-   
+    z-index: 5;
+
       h2{
          
          color: $white-color;
          cursor: pointer;
          padding: 0.4rem 0rem 0.4rem 1rem;
-       
          display: flex;
          justify-content: space-between;
          align-items: center;
          z-index: 3;
          font-weight: 200;
-       
+         margin: 0;
+         @media only screen and (max-width: 600px) {
+            font-size: 13px; 
+            padding: 0;
+            }
          
-     
+         .arrow{
+            width: 30px;
+            
+         }
          .arrow__down{
       
          transform: rotate(-180deg);
          transition: all 0.5s ease;
+         
          }
          .arrow__up{
             // transform: rotate(90deg);
@@ -35,40 +47,52 @@
     
       }
    }
-      .description__container{
-         // position: relative;
-      }
-    
+   .description__container{
+     
+   }
       p{
      
          background-color: $secondary-color;
          color: $main-color;
          padding: 0rem 1rem 0rem 1rem;
-         z-index: -8;
+         z-index: 0;
          font-size: 19px;
          line-height: 32px;
          overflow: hidden;
          max-height: 0px;
-         transition: max-height 0.7s cubic-bezier(0,1,0,1);
-         transition: padding 0.7s cubic-bezier(0,1,0,1) ;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-         margin-top: -1.20rem;
+         border-bottom-left-radius: 15px;
+         border-bottom-right-radius: 15px;
+         margin: 0;
+         // line-height: 0px;
+         // opacity: 0;
+         // max-lines: 1;
+         
+         // transition: max-height 4s ease-in-out;
+        
+
+        
+         @media only screen and (max-width: 600px) {
+            font-size: 12px; 
+         
+            }
          
      
          
       }
       .show{
-         
+      // opacity: 1;
         height: auto;
         max-height: 9999px;
-        padding: 1rem 1rem 2rem 1rem;
-        transition: all 0.7s cubic-bezier(1,0,1,0) ;
-        transition: max-height 0.7s cubic-bezier(1,0,1,0) ;
+        padding: 0rem 1rem 0rem 1rem;
+        line-height: 32px;
+        transition: all 0.5s cubic-bezier(1,0,1,0) ;
 
-      
-  
-      
+      }
+
+      .hide{
+         // opacity: 0;
+         transition: all 0.4s cubic-bezier(0,1,0,1);
+        
       }
    }
 }

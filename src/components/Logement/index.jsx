@@ -31,8 +31,6 @@ export default function Logement() {
 
   if(logement !== undefined)
 
-
- 
   return (<>
   <div className="logement__container">
 

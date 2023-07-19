@@ -11,21 +11,39 @@
     border-radius: 25px;
     height: 223px;
     max-width: 1240px;
-   
     margin: 0 auto;
     margin-top: 50px;
-    padding: 0rem 0rem;
-   
     background-position: center;
     background-size: cover;
+    @include display-flex;
+    width: 90%;
+    @media only screen and (max-width: 830px) {
+      max-width: 90%;
+      margin-top: 25px; 
+    }
     @media only screen and (max-width: 600px) {
-    max-width: 80%;
+      max-width: 90%;
+      border-radius: 10px;
+      margin-top: 15px; 
+      height: 111px;
+      padding: 0rem 0.5rem;
+      
     }
     
-  @include display-flex;
-  color: $white-color;
-      h1{
+    h1{
         font-size: 48px;
+        color: $white-color;
+        @media only screen and (max-width: 830px) {
+          font-size: 27px;
+          
+        
+        }
+        @media only screen and (max-width: 600px) {
+          font-size: 24px;
+          max-width: 80%;
+          
+          }
+          
       }
    
     }

@@ -6,16 +6,30 @@ align-items: center;
 flex-direction: column;
 background-color:$dark-color ;
 padding: 66px 0px 29px 0px; 
-position: absolute;
-bottom: 0;
+margin-top: auto;
 width: 100%;
 
+
+img{
+   @media only screen and (max-width: 600px) {
+      width: 122px;
+      height: 39.444px; 
+      }
+   
+}
 
  h3{
     color:$white-color;
     font-weight: 100;
     font-size: 1em;
-
+    @media only screen and (max-width: 600px) {
+      max-width: 130px;
+      font-size: 12px; 
+      text-align: center;
+      
+   
+      }
+   
  }
 
 }

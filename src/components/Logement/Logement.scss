@@ -2,8 +2,20 @@
 
 .logement__container{
     max-width: 1240px;
+    width: 90%;
     margin: 0 auto;
     padding-top: 40px;
+    margin-bottom: 30px;
+
+    .rate{
+        width: 30px;
+        height: 30px; 
+        @media only screen and (max-width: 830px) {
+            width: 15px;
+            height: 15px;
+            margin-right: 0.2rem; 
+            }
+    }
 }
 
 .accordions__container{
@@ -13,14 +25,24 @@
      width: 47%;
      margin: 0;
      padding: 0;
+     @media only screen and (max-width: 830px) {
+        flex-direction: column;
+        width: 100%;
+           }
    
     }
+    @media only screen and (max-width: 830px) {
+     flex-direction: column;
+    
+        }
 
 }
 .tags{
     display: flex;
     justify-content: start;
     gap: 1rem;
+    flex-wrap: wrap;
+            
 }
 .tag{
     background-color:$main-color;
@@ -28,6 +50,13 @@
     padding: 0.4rem 1.6rem;
     font-size: 14px; 
     border-radius: 10px; 
+    @media only screen and (max-width: 830px) {
+        font-size: 13px
+        }
+        @media only screen and (max-width: 600px) {
+            font-size: 10px
+            }
+    
    
     
 }

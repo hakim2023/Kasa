@@ -2,8 +2,10 @@
    
     height: 415px;
     position: relative;
+    @media only screen and (max-width: 830px) {
+        height: 315px;
+      }
     
-
     .slide{
         position: absolute;
         top: 0;
@@ -17,15 +19,26 @@
     .left__arrow , .right__arrow{
         position: absolute;
         top: 50%;
-        
         transform: translateY(-50%);
         cursor: pointer;
+        width: 46.68px;
+        height: 79.2px; 
+        @media only screen and (max-width: 830px) {
+            width: 24px;
+            height: 30px; 
+          }
     }
     .left__arrow{
         left: 30px;
+        @media only screen and (max-width: 830px) {
+            left: 12px;
+          }
     }
     .right__arrow{
         right: 30px;
+        @media only screen and (max-width: 830px) {
+            right: 12px;
+          }
     }
     .photos__number{
         position: absolute;
@@ -35,6 +48,9 @@
         font-size: 22px;
         color: white;
         text-shadow: 1px 1px 2px black;
+        @media only screen and (max-width: 830px) {
+           display: none;
+          }
     }
 
 }

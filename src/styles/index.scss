@@ -31,16 +31,19 @@ $white-color:#FFFFFF;
 
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: Montserrat;
+  max-width: 1800px;
+}
 
-  position: relative;
+#root{
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+  box-sizing: border-box;
+
   
-  padding-bottom: 200px;
-
-
 }
 
 code {

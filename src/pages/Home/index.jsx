@@ -8,10 +8,10 @@ function Home() {
  
   
   return (
-    <div className="Home">
+    <>
       <Banner text={text} />
       <Gallery/>
-    </div>
+    </>
   );
 }
 

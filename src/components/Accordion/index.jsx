@@ -18,13 +18,13 @@ const [selected , setSelected] = useState(null)
                         <div className='title__accordion'>
                           <h2 onClick={() => toggleAccordion(i)}>{props.title} 
                             <span className='dropdown'>
-                              <img className ={selected === i?'arrow__down':'arrow__up'} src={arrowUp} alt="arrow-up" />
+                              <img className ={selected === i?'arrow__down arrow ':'arrow arrow__up'} src={arrowUp} alt="arrow-up" />
                             </span>
                           </h2>
                         </div>
 
                          <div className='description__container'>
-                            <p className={selected === i?'show':''}>{props.description}</p> 
+                            <p className={selected === i?'show':'hide'}>{props.description}</p> 
                           </div> 
                    </div>           
         

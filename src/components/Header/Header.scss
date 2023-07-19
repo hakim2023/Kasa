@@ -6,6 +6,7 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    width: 90%;
  
     
 
@@ -13,16 +14,35 @@ header{
      
      display: flex;
      gap: 2rem;
+     @media only screen and (max-width: 600px) {
+      gap: 1rem;
+     
+      }
      a{
         font-size: 24px; 
         line-height: 142.6%;
          color: $main-color;
          text-decoration: none;
          font-weight: 600;
+         @media only screen and (max-width: 600px) {
+          font-size: 12px; 
+          font-weight: 500; 
+          text-align: right; 
+          
+          }
+
+         
      }
        
     }
 
+}
+.logo{
+  @media only screen and (max-width: 600px) {
+    width: 145px;
+    height: 47px; 
+    
+    }
 }
 
 .active{

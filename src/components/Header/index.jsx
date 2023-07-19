@@ -8,28 +8,26 @@ function Header() {
     return (<>
          <header>
        
-        <Link to="/"><img className='active__logo'src={Logo} alt="logo" /></Link>
+        <Link to="/"><img className='logo'src={Logo} alt="logo" /></Link>
         
          <nav className="navbar">
-    <NavLink
-      exact="true"
-      // activeClassName="navbar__link--active"
-      className="navbar__link"
-      to="/"
-    >
-      Accueil
-    </NavLink>
-   
-    <NavLink
-      // activeClassName="navbar__link--active"
-      className="navbar__link"
-      to="/a_propos"
-    >
-      A Propos
-    </NavLink>
-  </nav>
-
-
+              <NavLink
+                exact="true"
+                // activeClassName="navbar__link--active"
+                className="navbar__link"
+                to="/"
+              >
+                Accueil
+              </NavLink>
+            
+              <NavLink
+                // activeClassName="navbar__link--active"
+                className="navbar__link"
+                to="/a_propos"
+              >
+                A Propos
+              </NavLink>
+         </nav>
         </header>
         </>
     )
