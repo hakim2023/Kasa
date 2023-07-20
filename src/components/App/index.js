@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './../../pages/Home'
 import Propos from './../../pages/Propos'
 import Error from './../../pages/Error'
-import Logement from './../Logement'
+import Logement from './../../pages/Logement'
 import ScrollToTop from '../ScrollToTop'
 export default function App() {
   return (

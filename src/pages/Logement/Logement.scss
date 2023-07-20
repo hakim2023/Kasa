@@ -29,12 +29,11 @@
         flex-direction: column;
         width: 100%;
            }
-   
     }
     @media only screen and (max-width: 830px) {
      flex-direction: column;
     
-        }
+         }
 
 }
 .tags{
@@ -43,20 +42,19 @@
     gap: 1rem;
     flex-wrap: wrap;
             
-}
-.tag{
-    background-color:$main-color;
-    color: $white-color;
-    padding: 0.4rem 1.6rem;
-    font-size: 14px; 
-    border-radius: 10px; 
-    @media only screen and (max-width: 830px) {
-        font-size: 13px
-        }
-        @media only screen and (max-width: 600px) {
-            font-size: 10px
+    .tag{
+        background-color:$main-color;
+        color: $white-color;
+        padding: 0.4rem 1.6rem;
+        font-size: 14px; 
+        border-radius: 10px; 
+        @media only screen and (max-width: 830px) {
+            font-size: 13px;
+            padding: 0.3rem 1rem;
             }
-    
-   
-    
+            @media only screen and (max-width: 600px) {
+                font-size: 10px
+                }
+        
+    }
 }

@@ -6,14 +6,13 @@
    .accordion__container{
       padding: 0rem;
       margin-top: 5%;
-    
     .title__accordion{
 
     padding: 0rem 1rem;
     background-color:  $main-color;
     border-radius: 5px;
     z-index: 5;
-
+  
       h2{
          
          color: $white-color;
@@ -47,29 +46,21 @@
     
       }
    }
-   .description__container{
-     
-   }
+   
+
+
       p{
-     
+        padding: 0rem 0rem 0rem 1.5rem;
          background-color: $secondary-color;
          color: $main-color;
-         padding: 0rem 1rem 0rem 1rem;
-         z-index: 0;
          font-size: 19px;
          line-height: 32px;
          overflow: hidden;
          max-height: 0px;
          border-bottom-left-radius: 15px;
          border-bottom-right-radius: 15px;
-         margin: 0;
-         // line-height: 0px;
-         // opacity: 0;
-         // max-lines: 1;
-         
-         // transition: max-height 4s ease-in-out;
+         margin: 0; 
         
-
         
          @media only screen and (max-width: 600px) {
             font-size: 12px; 
@@ -80,18 +71,20 @@
          
       }
       .show{
-      // opacity: 1;
+   
         height: auto;
         max-height: 9999px;
-        padding: 0rem 1rem 0rem 1rem;
+        padding: 1rem 0rem 1rem 1.5rem;
         line-height: 32px;
-        transition: all 0.5s cubic-bezier(1,0,1,0) ;
+        transition: max-height 0.7s cubic-bezier(1,0,1,0) ;
+      
 
       }
 
       .hide{
-         // opacity: 0;
-         transition: all 0.4s cubic-bezier(0,1,0,1);
+       
+         transition: padding  2s cubic-bezier(0,1,0,1);
+         // transition: max-height  0.4s linear;
         
       }
    }

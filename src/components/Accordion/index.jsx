@@ -23,7 +23,7 @@ const [selected , setSelected] = useState(null)
                           </h2>
                         </div>
 
-                         <div className='description__container'>
+                         <div className={selected === i?'show__desc description__container':'hide__desc description__container'}>
                             <p className={selected === i?'show':'hide'}>{props.description}</p> 
                           </div> 
                    </div>           
