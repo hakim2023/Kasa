@@ -8,7 +8,8 @@ import './Gallery.scss'
 export default function Gallery() {
 
   return (
-    <ul className='gallery__container'>          
+    <ul className='gallery__container'>      
+       
               {logements.map((logement) => (
 						  	      <Card 
                         key={logement.id}

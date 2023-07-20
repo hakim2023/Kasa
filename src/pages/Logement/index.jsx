@@ -15,19 +15,22 @@ export default function Logement() {
   const logement = logements.find((logement) => logement.id === id)
 
   if (logement === undefined){
-    return<>
-    <Navigate to="/page404" replace={true}  />
-    </>
+    return (
+      <>
+          <Navigate to="/page404" replace={true}  />
+      </>
+    )
   }
   const equip = logement.equipments.map(function(item, idx) {
-    
-    return (
-        <span key={idx}>
+      
+      return (
+          <span key={idx}>
             {item}
             <br/>
-        </span>
-     )
-})
+          </span>
+        )
+    })
+
 
   if(logement !== undefined)
 

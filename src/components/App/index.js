@@ -5,6 +5,7 @@ import Propos from './../../pages/Propos'
 import Error from './../../pages/Error'
 import Logement from './../../pages/Logement'
 import ScrollToTop from '../ScrollToTop'
+
 export default function App() {
   return (
    <>
@@ -12,7 +13,7 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     {/* <Route path="/logements" element={<Logements />} /> */}
-                    <Route path="/logement/:id" element={<Logement />} />
+                    <Route path="/logement/:id" element={<Logement />}/>
                     <Route path="/a_propos" element={<Propos />}  />
                     <Route path="*" element={<Error />} />
                </Routes>
