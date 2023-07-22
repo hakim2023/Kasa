@@ -25,7 +25,7 @@ function Header() {
                 className="navbar__link"
                 to="/a_propos"
               >
-                A Propos
+                À Propos
               </NavLink>
          </nav>
         </header>
