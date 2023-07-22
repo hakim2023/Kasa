@@ -1,17 +1,17 @@
-**Projet 6 openclassrooms by Ouadie Abdelhakim**
+# **Projet 6 openclassrooms by Ouadie Abdelhakim**
 
-**Créez une application web de location immobilière avec React**
+# **Créez une application web de location immobilière avec React**
 
-# Pour ouvrir le projet il faut:
+## Pour ouvrir le projet il faut:
 
-## installer les modules nécessaires
+installer les modules nécessaires
 
 ### `npm install`
 
-## puis pour demarrer
+puis pour demarrer
 
 ### `npm start`
 
-## finallement
+finallement
 
 ### 'Ouvrir [http://localhost:3000] dans le navigateur.'
