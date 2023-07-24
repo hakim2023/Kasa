@@ -10,14 +10,13 @@ function Propos() {
         <Banner text={text} />
         <div className="accordion_collapse">  
            {valeurs_data.map((valeur) => (
-          
                <Accordion  
                     key={valeur.id} 
                     title={valeur.title}
                     description={valeur.description}
                 />
                 ))}   
-                </div> 
+          </div> 
         </>
     )
 }

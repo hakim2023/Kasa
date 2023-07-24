@@ -8,12 +8,15 @@ function Header() {
     return (<>
          <header>
        
-        <Link to="/"><img className='logo'src={Logo} alt="logo" /></Link>
+       {/* le logo de la page qui mene vers home grace a l'element --link-- de react*/}
+        <Link to="/">
+          <img className='logo'src={Logo} alt="logo" />
+        </Link>
         
+        {/* la navigation aui contient deux elements (accueil et a propos)*/}
          <nav className="navbar">
               <NavLink
                 exact="true"
-                // activeClassName="navbar__link--active"
                 className="navbar__link"
                 to="/"
               >
@@ -21,7 +24,6 @@ function Header() {
               </NavLink>
             
               <NavLink
-                // activeClassName="navbar__link--active"
                 className="navbar__link"
                 to="/a_propos"
               >

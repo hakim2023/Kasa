@@ -11,7 +11,7 @@ const [selected , setSelected] = useState(false);
 
   function toggleAccordion(){
     setSelected(!selected)
-    // quand l'utiliateur clic sur le bouton - le setSelected chnage l'etat de dropdown  à l'opposé de ce qu'ill etait 
+    // quand l'utiliateur clic sur le bouton - le setSelected change l'etat de dropdown  à l'opposé de ce qu'ill etait 
     // ( true devient false et false deviens true)
   }
   return (
@@ -27,7 +27,7 @@ const [selected , setSelected] = useState(false);
                           </h2>
                         </div>
 
-                         <div className={selected ?'show__desc description__container':'hide__desc description__container'}>
+                         <div >
                             <p className={selected ?'show':'hide'}>{props.description}</p> 
                          </div> 
                    </div>           

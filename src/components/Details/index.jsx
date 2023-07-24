@@ -1,6 +1,7 @@
 import React from 'react'
 import './Details.scss'
 import Rating from '../Rating'
+
 export default function Details(props) {
 
 

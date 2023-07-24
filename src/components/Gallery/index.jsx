@@ -3,8 +3,6 @@ import Card from '../Card'
 import {logements} from './../../data/logements'
 import './Gallery.scss'
 
-// console.log(logements)
-
 export default function Gallery() {
 
   return (
@@ -16,9 +14,9 @@ export default function Gallery() {
                         id={logement.id}
                         cover={logement.cover}
                         title={logement.title}
-                        host={logement.host}
+                        // host={logement.host}
 						      	 />               
-                ))}   
+              ))}   
     </ul>
          )
 }

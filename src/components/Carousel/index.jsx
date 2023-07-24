@@ -5,15 +5,20 @@ import arrowRight from './../../assets/arrow-right.png'
 import { useState } from 'react'
 
 export default function Carousel(props) {
+  //je définis l'index du premier slide à 0
  const [index , setIndex] = useState(0)
 function previous(){
-  const isFirstSlide = index ===0;
+  // si on est sur la premiere slide cad index=0 alors isFirsSlide = true;
+  const isFirstSlide = index === 0; 
+   // on repart au dernier slide quand on est au premier
   const newIndex = isFirstSlide? props.pictures.length - 1 : index-1;
   setIndex(newIndex)
 }
 
 function next(){
+    // si on est sur la derniere slide càd index=props.pictures.length-1 alors isLastSlide = true;
   const isLastSlide = index === props.pictures.length-1;
+  // on repart au premier slide quand on arrive au dernier
   const newIndex = isLastSlide?  0 : index  +1;
   setIndex(newIndex)
 }
