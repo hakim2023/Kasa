@@ -1,6 +1,6 @@
-# **Projet 6 openclassrooms by Ouadie Abdelhakim**
+# **Projet 6 openclassrooms by Ouadie**
 
-# **Créez une application web de location immobilière avec React**
+# Créez une application web de location immobilière avec React
 
 ## Pour ouvrir le projet il faut:
 
